@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: fandagr_development
   pool: 5
-  username: elizahyde
+  username: Ykat
   password:
   host: localhost
 
@@ -44,7 +44,7 @@ test:
   encoding: unicode
   database: fandagr_test
   pool: 5
-  username: elizahyde
+  username: Ykat
   password:
   host: localhost
 
@@ -53,6 +53,6 @@ production:
   encoding: unicode
   database: fandagr_production
   pool: 5
-  username: elizahyde
+  username: Ykat
   password:
   host: localhost
