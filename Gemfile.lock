@@ -165,6 +165,7 @@ DEPENDENCIES
   json
   meta_request
   movies
+  nokogiri
   pg
   pry-debugger
   pry-rails

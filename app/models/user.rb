@@ -7,5 +7,6 @@ class User < ActiveRecord::Base
   has_many :movies, :through => :tickets
 
   validates :username, :uniqueness => true
+  validates :age, :presence => { :message => "Age cannot be blank" }
 
 end
