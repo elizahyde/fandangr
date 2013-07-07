@@ -1,18 +1,22 @@
 require 'spec_helper'
 
-# This I copied from the sample thing he did.
 describe User do
   it "signs up" do
-    user = User.new(:name => "Elizabeth Ramberg", :age => 28, :username => "ehramberg")
+    user = User.new(:name => "Elizabeth Ramberg", :age => 28, :username => "ehramberg", :password => "1234")
     user.save
 
     users = User.all
     expect(users).to include(user)
   end
-# There should be a minumum age thing.
-  it "signs up with no age" do
-    user = User.new(:name => "Sumeet Jain", :username => "sjain")
+
+  it "user cannot sign up without age" do
+    user = User.new(:name => "Sumeet Jain", :username => "sjain", :password => "5678")
 
     expect(user.valid?).to be_false
   end
+
+  it { should validate_uniqueness_of(:username) }
+  it { should have_many(:tickets) }
+  it { should have_many(:movies).through(:tickets) }
+
 end
