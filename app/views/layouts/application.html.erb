@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fandagr</title>
+  <title>Fancytime Theatre</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+<div class="wrapper">
+  <div class="sticky-bar">
+    <span><a href="/" class="title">Fancytime Theatre</a></span>
+  </div>
+</div>
 <body>
 
 <%= yield %>
