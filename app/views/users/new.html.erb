@@ -1,0 +1,16 @@
+
+  <br>
+  <br>
+  <br>
+  <br>
+<%= form_for @user do |f| %>
+  <label>Username</label>
+  <%= f.text_field :username %>
+  <label>Password</label>
+  <%= f.password_field :password %>
+  <label>Age</label>
+  <%= f.number_field :age %>
+  <label>Password Confirmation</label>
+  <%= f.password_field :password_confirmation %>
+  <%= f.submit %>
+<% end %>

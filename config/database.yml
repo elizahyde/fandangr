@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: fandagr_development
+  database: fandangr_development
   pool: 5
   username: Ykat
   password:
@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: fandagr_test
+  database: fandangr_test
   pool: 5
   username: Ykat
   password:
@@ -19,7 +19,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: fandagr_production
+  database: fandangr_production
   pool: 5
   username: Ykat
   password:
