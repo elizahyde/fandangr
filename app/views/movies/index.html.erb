@@ -1,123 +1,21 @@
 
-<h1>Movies</h1>
+<h1>Movies for Sunday, July 14, 2013</h1>
 
+<div id="container">
 
-<div id="accordion">
-
-  <div id="container">
-    <h1>Movies for Sunday, July 14, 2013<h1>
-    <% @movies.each do |m| %>
-    <div class="movie">
-      <h2 class="movieName"><%= movie.name %></h2>
-      <h3 class="rating"><%= movie.rating %></h2>
-        <p class="synopsis"><%= movies.synopsis %></p>
-        <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-
-        <% @movies.tickets.each do |ticket| %>
-
-        <p class="showtimes"><%= ticket.times.map {|time|
-          <a href="/tickets/071413/:movie_id">time</a> }.join(" | ") %> </p>
-
-
-        <p class="showtimes"><ul>
-          <li><a href="/tickets/:movie_id/071413/0330">3:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071413/0530">5:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071413/0730">7:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071413/0930">9:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071413/1130">11:30 pm</a></li>
-        </ul>
-           </p>
-
-    </div>
-    <% end %>
+  <% @movies.each do |movie| %>
+  <div class="movies">
+    <h2 class="movieName"><%= movie.name %></h2>
+    <h3 class="rating"><%= movie.rating %></h2>
+      <p class="synopsis"><%= movie.synopsis %></p>
+      <p class="duration"><%= movie.duration %> minutes</p>
+      <p class="showtimes">
+        <a href="/tickets/:movie_id/071413/0330">3:30 pm</a> |
+        <a href="/tickets/:movie_id/071413/0530">5:30 pm</a> |
+       <a href="/tickets/:movie_id/071413/0730">7:30 pm</a><br>
+        <a href="/tickets/:movie_id/071413/0930">9:30 pm</a> |
+        <a href="/tickets/:movie_id/071413/1130">11:30 pm</a>
+      </p>
   </div>
-
-  <div id="container">
-    <h1>Movies for Monday, July 15, 2013<h1>
-    <% @movies.each do |m| %>
-    <div class="movie">
-      <h2 class="movieName"><%= movie.name %></h2>
-      <h3 class="rating"><%= movie.rating %></h2>
-        <p class="synopsis"><%= movies.synopsis %></p>
-        <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-
-        <p class="showtimes"><ul>
-          <li><a href="/tickets/:movie_id/071513/0330">3:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071513/0530">5:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071513/0730">7:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071513/0930">9:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071513/1130">11:30 pm</a></li>
-        </ul>
-           </p>
-
-    </div>
-    <% end %>
-  </div>
-
-  <div id="container">
-    <h1>Movies for Tuesday, July 16, 2013<h1>
-    <% @movies.each do |m| %>
-    <div class="movie">
-      <h2 class="movieName"><%= movie.name %></h2>
-      <h3 class="rating"><%= movie.rating %></h2>
-        <p class="synopsis"><%= movies.synopsis %></p>
-        <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-
-        <p class="showtimes"><ul>
-          <li><a href="/tickets/:movie_id/071613/0330">3:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071613/0530">5:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071613/0730">7:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071613/0930">9:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071613/1130">11:30 pm</a></li>
-        </ul>
-           </p>
-
-    <% end %>
-  </div>
-
-  <div id="container">
-    <h1>Movies for Wednesday, July 17, 2013<h1>
-    <% @movies.each do |m| %>
-    <div class="movie">
-      <h2 class="movieName"><%= movie.name %></h2>
-      <h3 class="rating"><%= movie.rating %></h2>
-        <p class="synopsis"><%= movies.synopsis %></p>
-        <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-
-        <p class="showtimes"><ul>
-          <li><a href="/tickets/:movie_id/071713/0330">3:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071713/0530">5:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071713/0730">7:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071713/0930">9:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071713/1130">11:30 pm</a></li>
-        </ul>
-           </p>
-
-    </div>
-    <% end %>
-  </div>
-
-  <div id="container">
-    <h1>Movies for Thursday, July 18, 2013<h1>
-    <% @movies.each do |m| %>
-    <div class="movie">
-      <h2 class="movieName"><%= movie.name %></h2>
-      <h3 class="rating"><%= movie.rating %></h2>
-        <p class="synopsis"><%= movies.synopsis %></p>
-        <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-
-        <p class="showtimes"><ul>
-          <li><a href="/tickets/:movie_id/071813/0330">3:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071813/0530">5:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071813/0730">7:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071813/0930">9:30 pm</a></li>
-          <li><a href="/tickets/:movie_id/071813/1130">11:30 pm</a></li>
-        </ul>
-           </p>
-
-    </div>
-    <% end %>
-  </div>
-
-
+  <% end %>
 </div>
