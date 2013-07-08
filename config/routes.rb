@@ -7,8 +7,8 @@ resources :movies, :tickets
 
 resources :users
 
-# this is for show
-# root :to "/tickets/:movie_id/:time"
+get "/tickets/:movie_id/:time" => 'tickets#purchase'
+
 
 root :to => 'movies#index'
 

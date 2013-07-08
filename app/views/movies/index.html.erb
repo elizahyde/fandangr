@@ -9,10 +9,10 @@
     <h3 class="rating"><%= movie.rating %></h2>
       <p class="synopsis"><%= movie.synopsis %></p>
       <p class="duration"><%= movie.duration %> minutes</p>
-      <% movie.tickets.each do |ticket| %>
-      <p class="showtimes">
-        <a href="/tickets/:movie_id/:time"><%= ticket.time.strftime("%H:%M") %></a><% end %>
-      </p>
+      <ul class="showtimes">
+        <% movie.tickets.map(&:time).uniq.each do |ticket| %>
+        <li><a href="/tickets/<%= movie.id %>/<%= ticket.strftime("%H:%M") %>"><%= ticket.strftime("%H:%M") %></a></li><% end %>
+      </ul>
   </div>
   <% end %>
 </div>
