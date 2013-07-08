@@ -9,12 +9,14 @@
   width: 100%;
   text-align: center;
   z-index: 500;
+  padding: 10px;
 }
 
 .title {
   font-family: 'Great Vibes', cursive;
   color: gold;
-  font-size: 32px;
+  font-size: 40px;
+
   text-decoration: none;
   z-index: 530;
   text-shadow: 4px 4px 1px rgba(0,0,0,0.15);
@@ -29,7 +31,7 @@
 
 .movies {
   width: 400px;
-  height: 275px;
+  height: 250px;
   margin: 5px;
   float: left;
   overflow: hidden;
@@ -38,45 +40,46 @@
 }
 
 .movies .movieName {
- color: white;
- font-family: verdana;
- left: 0;
- top: .2em;
- font-size: 1.3em;
+  color: white;
+  font-family: verdana;
+  font-size: 1.3em;
+  margin: 10px;
+  float: left;
 }
 
 .movies .rating {
   color: white;
   font-family: verdana;
-  right: .4em;
-  top: .2em;
   font-size: 1.3em;
+  margin: 10px;
+  float: right;
 }
 
 .movies .synopsis {
   color: white;
   font-family: verdana;
   font-size: 1em;
-  width: 100%;
-  top: .5em;
-  left: .2em;
+  width: 90%;
   font-style: italic;
+  margin: 20px 10px 10px 10px;
+  float: left;
 }
 
 .movies .duration {
   color: white;
   font-family: verdana;
-  right: .4em;
-  top: 1.5em;
   font-size: 1em;
+  margin: 10px;
+  float: right;
 }
 
 .movies .showtimes {
+  color: white;
   font-family: verdana;
-  font-size: 2em;
-  bottom: 2em;
-  left: 0;
-  width: 100%;
+  font-size: 1.2em;
+  width: 95%;
+  text-align: center;
+  clear: both;
 }
 
 .movies .showtimes a {

@@ -1,4 +1,5 @@
-<h1>Movies for Sunday, July 14, 2013<h1>
+
+<h1>Movies for Sunday, July 14, 2013</h1>
 
 <div id="container">
 
@@ -8,13 +9,13 @@
     <h3 class="rating"><%= movie.rating %></h2>
       <p class="synopsis"><%= movie.synopsis %></p>
       <p class="duration"><%= movie.duration %> minutes</p>
-      <ul class="showtimes">
-        <li><a href="/tickets/:movie_id/071413/0330">3:30 pm |</a></li>
-        <li><a href="/tickets/:movie_id/071413/0530"> &nbsp; 5:30 pm |</a></li>
-        <li><a href="/tickets/:movie_id/071413/0730"> &nbsp; 7:30 pm</a></li>
-        <li><a href="/tickets/:movie_id/071413/0930">9:30 pm |</a></li>
-        <li><a href="/tickets/:movie_id/071413/1130"> &nbsp; 11:30 pm</a></li>
-      </ul>
+      <p class="showtimes">
+        <a href="/tickets/:movie_id/071413/0330">3:30 pm</a> |
+        <a href="/tickets/:movie_id/071413/0530">5:30 pm</a> |
+       <a href="/tickets/:movie_id/071413/0730">7:30 pm</a><br>
+        <a href="/tickets/:movie_id/071413/0930">9:30 pm</a> |
+        <a href="/tickets/:movie_id/071413/1130">11:30 pm</a>
+      </p>
   </div>
   <% end %>
 </div>
