@@ -32,11 +32,47 @@ movies.each do |movie|
   seatcount = 0
   datecount = 0
   timecount = 0
+
   40.times do |ticket|
     movie.tickets.create({
-      date: 2013/(14 + datecount+=1)/7,
+      date: "July 14 2014",
       seat: (seatcount+= 1),
-      time: "#{1 + timecount+= 1 }:10"
+      time: "3:30 pm"
       })
   end
+  seatcount = 0
+  40.times do |ticket|
+    movie.tickets.create({
+      date: "July 14 2014",
+      seat: (seatcount+= 1),
+      time: "5:30 pm"
+      })
+  end
+
+
+  seatcount = 0
+  40.times do |ticket|
+    movie.tickets.create({
+      date: "July 14 2014",
+      seat: (seatcount+= 1),
+      time: "7:30 pm"
+      })
+  end
+  seatcount = 0
+  40.times do |ticket|
+    movie.tickets.create({
+      date: "July 14 2014",
+      seat: (seatcount+= 1),
+      time: "9:30 pm"
+      })
+  end
+  seatcount = 0
+  40.times do |ticket|
+    movie.tickets.create({
+      date: "July 14 2014",
+      seat: (seatcount+= 1),
+      time: "11:30 pm"
+      })
+  end
+
 end
