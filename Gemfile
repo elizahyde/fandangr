@@ -8,8 +8,6 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'shoulda-matchers'
 
-
-
 group :development do
   gem 'better_errors'
   gem 'pry-rails'
@@ -17,9 +15,6 @@ group :development do
   gem 'meta_request'
   gem 'binding_of_caller'
   gem 'shoulda-matchers'
-  gem 'nokogiri'
-
-
 end
 
 gem 'rspec-rails', :group => [:development, :test]
