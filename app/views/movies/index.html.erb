@@ -10,10 +10,14 @@
       <h3 class="rating"><%= movie.rating %></h2>
         <p class="synopsis"><%= movies.synopsis %></p>
         <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-        <% @movies.tickets.each do |ticket| %>
-        <% for movies.tickets.date == 2013/14/07 %>
-        <p class="showtimes"><%= ticket.times.map {|time| <a href="/tickets/071413/:movie_id">time</a> } %> </p>
-          <% end %>
+        <p class="showtimes"><ul>
+          <li><a href="/tickets/:movie_id/071413/0330">3:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071413/0530">5:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071413/0730">7:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071413/0930">9:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071413/1130">11:30 pm</a></li>
+        </ul>
+           </p>
     </div>
     <% end %>
   </div>
@@ -26,10 +30,14 @@
       <h3 class="rating"><%= movie.rating %></h2>
         <p class="synopsis"><%= movies.synopsis %></p>
         <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-        <% @movies.tickets.each do |ticket| %>
-        <p class="showtimes"><%= ticket.times.map {|time|
-          <a href="/tickets/071513/:movie_id">time</a> }.join(" | ") %> </p>
-          <% end %>
+        <p class="showtimes"><ul>
+          <li><a href="/tickets/:movie_id/071513/0330">3:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071513/0530">5:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071513/0730">7:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071513/0930">9:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071513/1130">11:30 pm</a></li>
+        </ul>
+           </p>
     </div>
     <% end %>
   </div>
@@ -42,10 +50,14 @@
       <h3 class="rating"><%= movie.rating %></h2>
         <p class="synopsis"><%= movies.synopsis %></p>
         <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-        <% @movies.tickets.each do |ticket| %>
-        <p class="showtimes"><%= ticket.times.map {|time|
-          <a href="/tickets/071613/:movie_id">time</a> }.join(" | ") %> </p>
-          <% end %>
+        <p class="showtimes"><ul>
+          <li><a href="/tickets/:movie_id/071613/0330">3:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071613/0530">5:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071613/0730">7:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071613/0930">9:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071613/1130">11:30 pm</a></li>
+        </ul>
+           </p>
     </div>
     <% end %>
   </div>
@@ -58,10 +70,14 @@
       <h3 class="rating"><%= movie.rating %></h2>
         <p class="synopsis"><%= movies.synopsis %></p>
         <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-        <% @movies.tickets.each do |ticket| %>
-        <p class="showtimes"><%= ticket.times.map {|time|
-          <a href="/tickets/071713/:movie_id">time</a> }.join(" | ") %> </p>
-          <% end %>
+        <p class="showtimes"><ul>
+          <li><a href="/tickets/:movie_id/071713/0330">3:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071713/0530">5:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071713/0730">7:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071713/0930">9:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071713/1130">11:30 pm</a></li>
+        </ul>
+           </p>
     </div>
     <% end %>
   </div>
@@ -74,10 +90,14 @@
       <h3 class="rating"><%= movie.rating %></h2>
         <p class="synopsis"><%= movies.synopsis %></p>
         <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
-        <% @movies.tickets.each do |ticket| %>
-        <p class="showtimes"><%= ticket.times.map {|time|
-          <a href="/tickets/071813/:movie_id">time</a> }.join(" | ") %> </p>
-          <% end %>
+        <p class="showtimes"><ul>
+          <li><a href="/tickets/:movie_id/071813/0330">3:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071813/0530">5:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071813/0730">7:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071813/0930">9:30 pm</a></li>
+          <li><a href="/tickets/:movie_id/071813/1130">11:30 pm</a></li>
+        </ul>
+           </p>
     </div>
     <% end %>
   </div>
