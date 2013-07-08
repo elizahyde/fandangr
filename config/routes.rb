@@ -5,7 +5,7 @@ match "login" =>  "sessions#new", :as => "login"
 
 resources :movies, :tickets
 
-resources :users, :only => [:new, :create]
+resources :users
 
 root :to => 'movies#index'
 
