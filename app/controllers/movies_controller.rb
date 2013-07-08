@@ -5,6 +5,8 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
+
+    @tickets = Ticket.all
   end
 
   def create
@@ -14,13 +16,14 @@ class MoviesController < ApplicationController
     else
       render :new
     end
-
   end
 
 
   def show
-
     @movie = Movie.find(params[:id])
 
   end
 end
+
+
+
