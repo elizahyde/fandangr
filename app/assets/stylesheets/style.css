@@ -10,13 +10,21 @@
   text-align: center;
   z-index: 500;
   vertical-align: middle;
+  color: white;
 }
 
 .sticky-bar a {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   float: right;
   margin-right: 50px;
+}
+
+.sticky-bar p {
+  color: white;
+  font-size: 12px;
+  float: right;
+  margin-right: 10px;
 }
 
 .sticky-bar a:hover {
@@ -30,6 +38,7 @@
   float: left;
   text-decoration: none;
   z-index: 530;
+  margin: 5px;
   text-shadow: 4px 4px 1px rgba(0,0,0,0.15);
 }
 
@@ -80,7 +89,7 @@
   color: white;
   font-family: verdana;
   font-size: 1em;
-  margin: 10px;
+  margin: 0 10px 20px 10px;
   float: right;
 }
 
@@ -88,29 +97,49 @@
   color: white;
   font-family: verdana;
   font-size: 1.2em;
-  width: 95%;
+  width: 100%;
   text-align: center;
   clear: both;
+  margin-left: -40px;
+}
+
+.movies .showtimes li {
+  display: inline;
+  padding: 5px;
 }
 
 .movies .showtimes a {
   color: gold;
 }
 
-.ticket {
-  width: auto;
+.theatre {
+  width: 1300px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.theatre .ticket {
   border-radius: .5px;
-  font-size: 14px;
+  font-size: 20px;
+  padding: 2px;
+  width: 110px;
+  text-align: center;
+  border: 1px solid black;
+  display: inline;
+  margin: 5px;
+  float: left;
 }
 
 .ticket a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
-.ticket .available{
+.available {
   background-color: gold;
 }
 
-.ticket .purchased {
+.purchased {
  background-color: #8C001A;
+ color: white;
 }

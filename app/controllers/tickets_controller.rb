@@ -1,11 +1,8 @@
 class TicketsController < ApplicationController
   def purchase
-    @ticket = User.find(params[:id])
+    @ticket = Ticket.where(params[:movie_id]).where(params[:time])
+    @tickets = Ticket.all
   end
 
-  def show
-    @movie = User.find(params[:id])
-    @ticket = Ticket.find(params[:id])
-    @ticket = Ticket.find(params[:time])
-  end
+
 end

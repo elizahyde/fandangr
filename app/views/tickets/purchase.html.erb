@@ -1,7 +1,8 @@
 <div id="container">
-  <div="seatpicker">
-    <h2>Screen</h2>
-      <% @tickets.movies do |movie| %>
-    <div class="ticket purchase"><a href=""><%= ticket.seat %></a></div>
+  <div class="theatre">
+      <h2>Screen</h2>
+      <% @tickets.each do |ticket| %>
+    <div class="ticket available"><%= ticket.time.strftime("%l:%Mpm") %> S<a href=""><%= ticket.seat %></a></div>
+    <% end %>
   </div>
 </div>
