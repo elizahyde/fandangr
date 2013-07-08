@@ -1,8 +1,5 @@
 class TicketsController < ApplicationController
   def purchase
-    @ticket = Ticket.where(params[:movie_id]).where(params[:time])
-    @tickets = Ticket.all
+    @tickets = Ticket.where(:movie_id => params[:movie_id]).where(:time => params[:time])
   end
-
-
 end
