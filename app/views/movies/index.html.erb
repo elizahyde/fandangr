@@ -11,8 +11,8 @@
         <p class="synopsis"><%= movies.synopsis %></p>
         <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
         <% @movies.tickets.each do |ticket| %>
-        <p class="showtimes"><%= ticket.times.map {|time|
-          <a href="/tickets/071413/:movie_id">time</a> }.join(" | ") %> </p>
+        <% for movies.tickets.date == 2013/14/07 %>
+        <p class="showtimes"><%= ticket.times.map {|time| <a href="/tickets/071413/:movie_id">time</a> } %> </p>
           <% end %>
     </div>
     <% end %>
