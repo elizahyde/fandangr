@@ -3,18 +3,15 @@
 
 <div id="container">
 
-  <% @movies.each do |movie| %>
+  <% @movies.last(6).each do |movie| %>
   <div class="movies">
     <h2 class="movieName"><%= movie.name %></h2>
     <h3 class="rating"><%= movie.rating %></h2>
       <p class="synopsis"><%= movie.synopsis %></p>
       <p class="duration"><%= movie.duration %> minutes</p>
+      <% movie.tickets.each do |ticket| %>
       <p class="showtimes">
-        <a href="/tickets/:movie_id/071413/0330">3:30 pm</a> |
-        <a href="/tickets/:movie_id/071413/0530">5:30 pm</a> |
-       <a href="/tickets/:movie_id/071413/0730">7:30 pm</a><br>
-        <a href="/tickets/:movie_id/071413/0930">9:30 pm</a> |
-        <a href="/tickets/:movie_id/071413/1130">11:30 pm</a>
+        <a href="/tickets/:movie_id/:time"><%= ticket.time.strftime("%H:%M") %></a><% end %>
       </p>
   </div>
   <% end %>

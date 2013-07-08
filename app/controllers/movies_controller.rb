@@ -7,6 +7,7 @@ class MoviesController < ApplicationController
     @movies = Movie.all
 
     @tickets = Ticket.all
+    # @ticket = Ticket.find(params[:movie_id])
   end
 
   def create

@@ -1,26 +1,26 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: fandangr_development
+  database: fandagr_development
   pool: 5
-  username: Ykat
+  username: elizahyde
   password:
   host: localhost
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: fandangr_test
+  database: fandagr_test
   pool: 5
-  username: Ykat
+  username: elizahyde
   password:
   host: localhost
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: fandangr_production
+  database: fandagr_production
   pool: 5
-  username: Ykat
+  username: elizahyde
   password:
   host: localhost
