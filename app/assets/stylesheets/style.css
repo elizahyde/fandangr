@@ -1,0 +1,84 @@
+.wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: #8C001A;
+  z-index: 500;
+}
+
+.sticky-bar {
+  width: 100%;
+  text-align: center;
+  z-index: 500;
+}
+
+.title {
+  font-family: 'Great Vibes', cursive;
+  color: gold;
+  font-size: 32px;
+  text-decoration: none;
+  z-index: 530;
+  text-shadow: 4px 4px 1px rgba(0,0,0,0.15);
+}
+
+#container {
+  padding: 5px;
+  margin-top: 30px;
+  width:auto;
+  height:auto;
+}
+
+.movies {
+  width: 400px;
+  height: 275px;
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #8C001A;
+}
+
+.movies .movieName {
+ color: white;
+ font-family: verdana;
+ left: 0;
+ top: .2em;
+ font-size: 1.3em;
+}
+
+.movies .rating {
+  color: white;
+  font-family: verdana;
+  right: .4em;
+  top: .2em;
+  font-size: 1.3em;
+}
+
+.movies .synopsis {
+  color: white;
+  font-family: verdana;
+  font-size: 1em;
+  width: 100%;
+  top: .5em;
+  left: .2em;
+  font-style: italic;
+}
+
+.movies .duration {
+  color: white;
+  font-family: verdana;
+  right: .4em;
+  top: 1.5em;
+  font-size: 1em;
+}
+
+.movies .showtimes {
+  font-family: verdana;
+  font-size: 1em;
+  bottom: 2em;
+  left: 0;
+  width: 100%;
+}
+
+.movies .showtimes a {
+  color: gold;
+}

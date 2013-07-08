@@ -1,0 +1,40 @@
+<div id="accordion">
+
+  <div id="container">
+    <h1>Movies for Sunday, July 14, 2013<h1>
+    <% @movies.each do |m| %>
+    <div class="movie">
+      <h2 class="movieName"><%= movie.name %></h2>
+      <h3 class="rating"><%= movie.rating %></h2>
+        <p class="synopsis"><%= movies.synopsis %></p>
+        <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
+        <% @movies.tickets.each do |ticket| %>
+        <p class="showtimes"><%= ticket.times.map {|time|
+          <a href="/tickets/071413/:movie_id">time</a> }.join(" | ") %> </p>
+          <% end %>
+    </div>
+    <% end %>
+  </div>
+
+  <div id="container">
+    <h1>Movies for Monday, July 15, 2013<h1>
+    <% @movies.each do |m| %>
+    <div class="movie">
+      <h2 class="movieName"><%= movie.name %></h2>
+      <h3 class="rating"><%= movie.rating %></h2>
+        <p class="synopsis"><%= movies.synopsis %></p>
+        <p class="duration"><%= movies.duration.strftime("%H h %M m") %></p>
+        <% @movies.tickets.each do |ticket| %>
+        <p class="showtimes"><%= ticket.times.map {|time|
+          <a href="/tickets/071513/:movie_id">time</a> }.join(" | ") %> </p>
+          <% end %>
+    </div>
+    <% end %>
+  </div>
+
+
+
+
+
+
+</div>
