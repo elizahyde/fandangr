@@ -1,0 +1,25 @@
+<h1>Patients#show</h1>
+<p>Find me in app/views/patients/show.html.erb</p>
+<p>
+    <b>Name:</b>
+    <%= @user.name %>
+  </p>
+
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @user.age %>
+</p>
+
+<p>
+  <b>Purchased Tickets:</b>
+  <% @user.tickets.each do |ticket| %>
+  <%= ticket.date %>
+  <%= ticket.seat %>
+  <%= ticket.time %>
+  <%= ticket.movie.name %>
+  <% end %>
+</p>
