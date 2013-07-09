@@ -8,6 +8,7 @@ resources :movies, :tickets
 resources :users
 
 get "/tickets/:movie_id/:time" => 'tickets#purchase'
+post "/tickets/buy" => 'tickets#buy'
 
 
 root :to => 'movies#index'

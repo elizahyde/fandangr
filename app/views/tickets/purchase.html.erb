@@ -2,7 +2,16 @@
   <div class="theatre">
       <h2>Screen</h2>
       <% @tickets.each do |ticket| %>
-    <div class="ticket available"><%= ticket.time.strftime("%l:%Mpm") %> S<a href=""><%= ticket.seat %></a></div>
+      <% if ticket.user == nil %>
+      <div class="ticket available" id="<%=ticket.id %>"><%= ticket.time.strftime("%l:%Mpm") %>
+        <%= link_to("S#{ticket.seat}", "#")%>
+      </div>
+      <%else%>
+      <div class="ticket purchased" id="<%=ticket.id %>"><%= ticket.time.strftime("%l:%Mpm") %>
+        <%= "S#{ticket.seat}" %>
+      </div>
+
+      <%end%>
     <% end %>
   </div>
 </div>

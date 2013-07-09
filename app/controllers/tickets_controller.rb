@@ -1,7 +1,15 @@
-
 class TicketsController < ApplicationController
   def purchase
-    @ticket = Ticket.where(params[:movie_id]).where(params[:time])
-    @tickets = Ticket.all
+    @tickets = Ticket.where(:movie_id => params[:movie_id]).where(:time => params[:time]).sort
+
+  end
+
+  def buy
+
+    @ticket = Ticket.find(params[:ticket_id])
+    #@ticket needs to be the ticket that is clicked on
+    @ticket.update_attributes(:user_id => current_user.id)
+    render nothing: true
+
   end
 end
