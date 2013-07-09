@@ -1,11 +1,12 @@
 <div id="container">
   <div class="theawrapper">
-    <h1 class="tickMovieName"><%= @movie_id %></h1>
+    <p class="tickMovieName"><%= @tickets.first.movie.name %></p>
+    <p class="tickMovieDeets"><%= @tickets.first.date.strftime("%A, %b %d") %> at<%= @tickets.first.time.strftime(" %l:%Mpm") %>
+    </p>
     <div class="theatre">
         <% @tickets.each do |ticket| %>
       <div class="ticket available"><a href=""><%= ticket.seat %></a></div>
       <% end %>
     </div>
-    <h2 class="tickHandicap">*Handicap Seats must be purchased in person</h2>
   </div>
 </div>
