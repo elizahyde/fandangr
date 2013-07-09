@@ -6,12 +6,12 @@
     <div class="theatre">
       <% @tickets.each do |ticket| %>
       <% if ticket.user == nil %>
-          <div class="ticket available" id="<%=ticket.id %>"><%= ticket.time.strftime("%l:%Mpm") %>
-            <%= link_to("S#{ticket.seat}", "#")%>
+          <div class="ticket available" id="<%= ticket.id %>"><%= ticket.seat %>
+            <% link_to("S#{ticket.seat}", "#")%>
           </div>
         <% else%>
-          <div class="ticket purchased" id="<%=ticket.id %>"><%= ticket.time.strftime("%l:%Mpm") %>
-            <%= "S#{ticket.seat}" %>
+          <div class="ticket purchased" id="<%= ticket.id %>"><%= ticket.seat %>
+            <% "S#{ticket.seat}" %>
           </div>
         <% end %>
       <% end %>
