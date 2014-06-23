@@ -6,7 +6,6 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'shoulda-matchers'
 
 group :development do
   gem 'better_errors'
@@ -17,10 +16,15 @@ group :development do
   gem 'shoulda-matchers'
 end
 
-gem 'rspec-rails', :group => [:development, :test]
+group :test, :development do
+  gem 'capybara'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
 
 gem 'json'
-gem 'movies'
+# gem 'movies'
+gem 'imdb'
 gem 'fandango'
 gem 'rottentomatoes'
 
